@@ -1,9 +1,9 @@
 import * as THREE from "three"
 import React, { Suspense, useRef, useState } from "react"
 import { Canvas, useFrame, useLoader } from "@react-three/fiber"
-import img1 from "./img/img1.jpg"
-import img2 from "./img/img2.jpg"
-import disp from "./img/displacement/10.jpg"
+import img1 from "./img/img1.png"
+import img2 from "./img/img2.png"
+import disp from "./img/displacement/10.png"
 import "./ImageFadeMaterial"
 function FadingImage() {
     const ref = useRef()
@@ -19,7 +19,7 @@ function FadingImage() {
   }
 function Land() {
     return (
-        <Canvas camera={{ position: [0, 0, 2], fov: 50 }} style={{width:"100vw",height:"100vh"}} >
+        <Canvas camera={{ position: [0, 0, 2], fov: 40 }} style={{width:"100vw",height:"100vh"}} >
           <Suspense fallback={null}>
             <FadingImage />
           </Suspense>
