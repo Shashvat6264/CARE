@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <img src="https://o.remove.bg/downloads/b8d096ee-ad0e-436c-8c7e-03493f1109cb/child-care-logo-design-inspiration-with-love-vector--removebg-preview.png" width="350px"/><br/>
+   CARE- CHILD ADOPTION AND REGITRATION ON ETHEREUM
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><b>CARE</b> is a decentralized app built on <b>Ethereum</b>, <br> Aims at creating an interface for people to report and track children who have been abandoned/orphaned. <br> This is to ensure that these children do not get exploited for cheap labour or fall into the trap of trafficking.<br/><br/></p>
 
-## Available Scripts
+## ⚡️ Quick start
+To use the application one must have Python 3.8 or above version installed in their machine.
 
-In the project directory, you can run:
+### :arrow_forward:Steps to Run:running: the project
+<!-- 1. Clone the repository in your machine.
+2. Open a terminal in the repository root folder.
+3. Install dependencies for the project from the requirements.txt file by using the command. 
+```bash
+pip install -r requirements.txt
+```
+4. Since, a database file is provided in the repository, you can directly run the Django server by the command: 
+```bash
+python3 manage.py runserver
+```
+5. If in any case the Database gets damaged, deleted or changed, you must migrate the already existing migrations to a new database. Command to migrate models to a new database is: 
+```bash
+python3 manage.py migrate
+```
+6. You can return to step 4 i.e. running the server, after doing migrations.
+7. After running the server, go to the URL **"127.0.0.1:8000"** to see the app running. -->
+8. You can test the app now.:confetti_ball::tada:
+<!-- - 📖 [Submission Document](https://docs.google.com/document/d/1CLNgayvGSYxIBk-vm8iN8L4YLoof6af-X0KcryZuZ5k/edit?usp=sharing) -->
 
-### `yarn start`
+## :construction:Working Demo Of The Project:construction:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## :bookmark_tabs:Why CARE?
+Reasons to Use <b>CARE</b> :
+1. The decentralized nature of the app will help maintain the integrity of the data and ensure easy traceability of each child. 
+2. Using <I>Polygon</I> for deployment during production, enhances our to be scalable. Indeed is cost-efficient, very reliable.
+3. CARE guarantees reliability by incorporating unique features at the organization and user backend.
+4. A smooth transition of a child from it’s reporter to agencies and further till its adoption takes place.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Our Team: BugSlayers
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Name Of Team Members | Mail IDs                    |
+| -------------------- | --------------------------- |
+| Shashvat Gupta       | shashvat6264@gmail.com      |
+| Sadhvika Kadari      | sadhvikadari2k1@gmail.com   |
+| Rahul Gorai          | rahul.gorai.3141@gmail.com  |
+| Ananya Mahato        | ananyamahato03@gmail.com    |
+| Palkit Lohia         | palkitlohia2001@outlook.com |
 
-### `yarn build`
+## :dart:Future Scope
+The project application can be further extended as:
+1. Concerned Government Authorities can monitor the ledger to ensure proper care is given to all registered children.
+2. Collaboration with the Government mandated to verify child adoption to safer hands.
+3. Eventually a policy can be initiated by the Government for raising funds for the particular orphan agencies/organizations who keep a check on all the health care, education and other welfare of the children they admitted. 
+4. Location based services to guide to the nearest orphanage. 
+5. Alert to nearby orphan organizations for easy picking of victims.
+6. The similar essence and working of the project can be used for stray and unvaccinated pets (Animal Welfare)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
