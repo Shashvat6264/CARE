@@ -22,9 +22,9 @@ function Nav() {
           </Link>
           <li>
           <DropdownButton id="dropdown-basic-button" title="Register" >
-            <Dropdown.Item href="#/action-1">Parent Registration</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Reporter Registration</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Organization Registration</Dropdown.Item>
+            <Dropdown.Item href="/registration/parent">Parent Registration</Dropdown.Item>
+            <Dropdown.Item href="/registration/reporter">Reporter Registration</Dropdown.Item>
+            <Dropdown.Item href="/registration/org">Organization Registration</Dropdown.Item>
           </DropdownButton>
           </li>
         </ul>
