@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity >=0.5.16 <0.9.0;
+pragma experimental ABIEncoderV2;
+
 
 import "./ChildReport.sol";
 import "./erc721.sol";
@@ -8,13 +10,13 @@ contract ChildOwnership is ChildReport, ERC721{
     
     mapping (uint => address) public childApprovals;
     
-    function balanceOf(address _owner) external override view returns (uint256) {
+    function balanceOf(address _owner) external view returns (uint256) {
         if (addressToOrganisation[_owner] != 0) return organisationToChildren[addressToOrganisation[_owner]].length;
         else if (addressToGuardian[_owner] != 0) return 1;
         else return 1;
     }
     
-    function ownerOf(uint256 _tokenId) external override view returns (address) {
+    function ownerOf(uint256 _tokenId) external view returns (address) {
         return childToCareTaker[_tokenId];
     }
     
@@ -36,12 +38,12 @@ contract ChildOwnership is ChildReport, ERC721{
         }
     }
 
-    function transferFrom(address _from, address _to, uint256 _tokenId) external override payable {
+    function transferFrom(address _from, address _to, uint256 _tokenId) external payable {
         require(childToCareTaker[_tokenId] == msg.sender || childApprovals[_tokenId] == msg.sender);
         _transfer(_from, _to, _tokenId);
     }
 
-    function approve(address _approved, uint256 _tokenId) external override payable onlyCareTakerOf(_tokenId){
+    function approve(address _approved, uint256 _tokenId) external payable onlyCareTakerOf(_tokenId){
         childApprovals[_tokenId] = _approved;
         emit Approval(msg.sender, _approved, _tokenId);
     }

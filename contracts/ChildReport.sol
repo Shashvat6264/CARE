@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity >=0.5.16 <0.9.0;
+pragma experimental ABIEncoderV2;
+
 
 contract ChildReport{
     enum GuardianType{REPORTER, PARENT}
@@ -74,7 +76,8 @@ contract ChildReport{
     
     function sendDonation(uint _orgId) public payable {
         uint256 amount = msg.value;
-        address payable receiver = payable(organisations[_orgId].addr);
+        address payable receiver = address(uint160(organisations[_orgId].addr));
+        // address payable receiver = payable(organisations[_orgId].addr);
         receiver.transfer(amount);
     }
 
