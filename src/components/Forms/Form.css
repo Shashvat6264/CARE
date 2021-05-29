@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #DDD;
+  background: #fbfafa;
   font-size: 16px;
   color: #222;
   font-family: 'Roboto', sans-serif;
@@ -15,12 +15,16 @@ body {
 
 #login-box {
   position: relative;
-  margin: 5% auto;
-  width: 600px;
+  margin: 0% auto;
+  top: 50%;
+  transform: translateY(-40%);
+  width: 500px;
   height: 400px;
   background: #FFF;
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  z-index: 5;
+  padding: 0rem 5rem;
 }
 
 .left {
@@ -44,7 +48,7 @@ h1 {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"]{
   display: block;
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -107,8 +111,20 @@ input[type="submit"]:active {
   text-align: center;
 }
 
-.Images {
+.img-left{
     width: 100%;
+    transform: scale(1.10) translateX(10%);
+    z-index: 150;
+    position: relative;
+    margin-top: 10%;
+}
+
+.img-right{
+    width: 100%;
+    transform: scale(1.0) translateX(-5%);
+    z-index: 150;
+    position: relative;
+    margin-top: 1%;
 }
 
 button.social-signin {

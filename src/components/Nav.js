@@ -11,7 +11,7 @@ function Nav() {
   };
   return (
     <div>
-      <nav>
+      <nav style={{zIndex: 200}}>
         <Link to="/" style={navStyle}>
           <h3>CARE</h3>
         </Link>
