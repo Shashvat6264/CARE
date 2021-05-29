@@ -77,5 +77,9 @@ contract ChildReport{
         address payable receiver = payable(organisations[_orgId].addr);
         receiver.transfer(amount);
     }
+
+    function getOrganisations() public view returns(Organisation[] memory) {
+        return organisations;
+    }
     
 }
