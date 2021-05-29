@@ -7,6 +7,8 @@ import Land from "./components/Land";
 import Nav from "./components/Nav";
 import Org from "./components/Org";
 import RegisterationForm from "./components/Forms/FormRouter";
+import ChildReg from "./components/ChildReg";
+import OrgDashboard from "./components/OrgDashboard";
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
           <Route path="/org" component={Org} />
           <Route path="/about" component={About} />
           <Route path="/registration" component={RegisterationForm} />
-          <Route path=""/>
+          <Route path="/child-reg" component={ChildReg} />
+          <Route path="/org-dash" component={OrgDashboard}/>
         </Switch>
       </div>
     </BrowserRouter>
