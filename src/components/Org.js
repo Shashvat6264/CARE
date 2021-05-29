@@ -34,6 +34,7 @@ function Org() {
           </Card.Body>
           <Card.Footer>
             <Button variant="secondary">Visit Website</Button>
+            <Button variant="secondary" style={{marginTop: "10px"}}>Make a Donation</Button>
           </Card.Footer>
         </Card>
       ))}
@@ -42,3 +43,7 @@ function Org() {
 }
 
 export default Org;
+
+// Description
+// Address
+// Website link
