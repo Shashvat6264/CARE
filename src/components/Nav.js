@@ -1,22 +1,36 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React from "react";
+import { Link } from "react-router-dom";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import Dropdown from 'react-bootstrap/Dropdown'
 function Nav() {
-    const navStyle={
-        color:"white",
-        textDecoration:"none",
-    };
-    return (
-        <div>
-            <nav>
-                <Link to="/" style={navStyle}><h3>CARE</h3></Link>
-                <ul className="nav-links">
-                    <Link style={navStyle} to="/about"><li>About</li></Link>
-                    <Link style={navStyle} to="/org"><li>Organizations</li></Link>
-                </ul>
-            </nav>
-        </div>
-    )
+  const navStyle = {
+    color: "white",
+    textDecoration: "none",
+  };
+  return (
+    <div>
+      <nav>
+        <Link to="/" style={navStyle}>
+          <h3>CARE</h3>
+        </Link>
+        <ul className="nav-links">
+          <Link style={navStyle} to="/about">
+            <li>About</li>
+          </Link>
+          <Link style={navStyle} to="/org">
+            <li>Organizations</li>
+          </Link>
+          <li>
+          <DropdownButton id="dropdown-basic-button" title="Register" >
+            <Dropdown.Item href="#/action-1">Parent Registration</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Reporter Registration</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Organization Registration</Dropdown.Item>
+          </DropdownButton>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
 }
 
-export default Nav
+export default Nav;
