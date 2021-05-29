@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap");
+.content {
+  text-align: center;
+  /* background-color: rgb(48, 48, 68); */
+
+  padding-bottom: 5%;
+
+  font-family: Karla;
+  font-size: 30px;
+  color: "blue";
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.desc {
+  width: 100%;
+}
