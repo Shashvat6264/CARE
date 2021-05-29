@@ -6,6 +6,8 @@ function Nav() {
   const navStyle = {
     color: "white",
     textDecoration: "none",
+    fontFamily:"Karla",
+    fontSize:"20px",
   };
   return (
     <div>
