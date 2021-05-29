@@ -3,8 +3,8 @@ import ParentForm from "./ParentForm";
 import OrgForm from "./OrgForm";
 import ReporterForm from "./ReporterForm";
 import {Container, Row, Col, Image} from 'react-bootstrap'
-import left from "./left.png"
-import right from "./right.png"
+import left from "../img/left.png"
+import right from "../img/right.png"
 import './Form.css'
 
 export default function RegisterationForm(){
