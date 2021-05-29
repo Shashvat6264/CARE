@@ -14,23 +14,19 @@ export default function RegisterationForm(){
         <div>
             <Container fluid={true}>
                 <Row>
-                    <Col>
-                        <Image className="Images" src={left}/>
+                    <Col style={{zIndex:100}}>
+                        <Image className="Images img-left" src={left}/>
                     </Col>
                     <Col>
-                        <div id="login-box">
-                            <div class="left">
                             <Switch>
                                 <Route exact path={path}><ParentForm /></Route>
                                 <Route exact path={`${path}/parent`}><ParentForm /></Route>
                                 <Route exact path={`${path}/reporter`}><ReporterForm /></Route>
                                 <Route exact path={`${path}/org`}><OrgForm /></Route>
                             </Switch>
-                            </div>
-                        </div>
                     </Col>
-                    <Col>
-                        <Image className="Images" src={right} />
+                    <Col style={{zIndex:100}}>
+                        <Image className="Images img-right" src={right} />
                     </Col>
                 </Row>
             </Container>
