@@ -23,7 +23,7 @@ function Nav() {
             <li>Organizations</li>
           </Link>
           <li>
-          <DropdownButton id="dropdown-basic-button" title="Register" >
+          <DropdownButton style={{marginTop: "5px"}} id="dropdown-basic-button" title="Register" >
             <Dropdown.Item href="/registration/parent">Parent Registration</Dropdown.Item>
             <Dropdown.Item href="/registration/reporter">Reporter Registration</Dropdown.Item>
             <Dropdown.Item href="/registration/org">Organization Registration</Dropdown.Item>
