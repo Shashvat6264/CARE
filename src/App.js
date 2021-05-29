@@ -41,7 +41,7 @@ class App extends Component{
             <Route path="/" exact component={Hero}/>
             <Route path="/org" component={Org} />
             <Route path="/about" component={About} />
-            <Route path="/registration" component={RegisterationForm} />
+            <Route path="/registration"><RegisterationForm /></Route>
             <Route path="/child-reg" component={ChildReg} />
             <Route path="/org-dash" component={OrgDashboard}/>
           </Switch>
