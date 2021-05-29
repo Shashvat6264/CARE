@@ -2,8 +2,6 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import About from "./components/About";
 import Hero from "./components/Hero";
-
-import Land from "./components/Land";
 import Nav from "./components/Nav";
 import Org from "./components/Org";
 import getWeb3 from './utils/getWeb3.js';
