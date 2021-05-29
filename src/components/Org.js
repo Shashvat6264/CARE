@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardGroup, CardDeck, Button, Modal } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import PaymentModal from "./PaymentModal";
 
 function Org() {
@@ -52,9 +52,6 @@ function Org() {
     },
   ];
 
-  function showModal(id) {
-      
-  }
   return (
     <div
       style={{ textAlign: "center", marginLeft: "25px", marginRight: "25px" }}
@@ -84,7 +81,7 @@ function Org() {
           </Card.Footer>
         </Card>
       ))}
-      <PaymentModal id={modalShow} show={modalShow != -1} onHide={() => setModalShow(-1)} />
+      <PaymentModal id={modalShow} show={modalShow !== -1} onHide={() => setModalShow(-1)} />
     </div>
   );
 }

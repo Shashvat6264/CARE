@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button, Container, Row, Col, Image} from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import './About.css'
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import left from "./img/left.png";
