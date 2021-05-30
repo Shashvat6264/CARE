@@ -24,9 +24,13 @@ function Hero() {
       </div>
       <div className="content bottom">
         <div className="desc-bottom ">
-          Are you an Organisation?
+          Are you an Organisation for Child Adoption?
+
+          <br></br>
+          DO you wish to light up the future of the Child
           <br></br>
           If yes then then enter here.
+          <br></br>
           <br></br>
           <Button variant="warning" href="/org-dash">
             Organisation Dashboard
