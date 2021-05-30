@@ -2,7 +2,8 @@ import React from 'react'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import './About.css'
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
-import left from "./img/left.png";
+import left from "./img/aboutUS1.png";
+import right from "./img/aboutUs2.png";
 
 function About() {
     return (
@@ -12,7 +13,7 @@ function About() {
                     <Col>
                         <ParallaxProvider>
                             <Parallax y={[-40, 10]} tagOuter="figure">
-                                <Image className="leftp-img" src={left} />
+                                <Image className="leftp-img" src={left} roundedCircle={true} />
                             </Parallax>
                         </ParallaxProvider>
                     </Col>
@@ -49,7 +50,7 @@ function About() {
                     <Col>
                         <ParallaxProvider>
                             <Parallax y={[-20, 20]} tagOuter="figure">
-                                <Image className="leftp-img" src={left} />
+                                <Image className="leftp-img" src={right} roundedCircle={true} />
                             </Parallax>
                         </ParallaxProvider>
                     </Col>
