@@ -19,18 +19,18 @@ class App extends Component{
     };
   }
 
-  componentDidMount(){
-    getWeb3.then(results => {
-      results.web3.eth.getAccounts((error, acc) => {
-        this.setState({
-          address: acc[0],
-          web3: results.web3
-        })
-      });
-    }).catch((error) => {
-      console.log('Error finding web3: ' + error);
-    })
-  }
+  // componentDidMount(){
+  //   getWeb3.then(results => {
+  //     results.web3.eth.getAccounts((error, acc) => {
+  //       this.setState({
+  //         address: acc[0],
+  //         web3: results.web3
+  //       })
+  //     });
+  //   }).catch((error) => {
+  //     console.log('Error finding web3: ' + error);
+  //   })
+  // }
 
   render(){
     return (
