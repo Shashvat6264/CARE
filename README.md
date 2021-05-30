@@ -1,12 +1,12 @@
 <h1 align="center">
-  <img src="https://o.remove.bg/downloads/b8d096ee-ad0e-436c-8c7e-03493f1109cb/child-care-logo-design-inspiration-with-love-vector--removebg-preview.png" width="350px"/><br/>
+  <img src="https://images.pexels.com/photos/1148998/pexels-photo-1148998.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="350px"/><br/>
    CARE- CHILD ADOPTION AND REGITRATION ON ETHEREUM
 </h1>
 
 <p align="center"><b>CARE</b> is a decentralized app built on <b>Ethereum</b>, <br> Aims at creating an interface for people to report and track children who have been abandoned/orphaned. <br> This is to ensure that these children do not get exploited for cheap labour or fall into the trap of trafficking.<br/><br/></p>
 
 ## ⚡️ Quick start
-To use the application one must have Python 3.8 or above version installed in their machine.
+To use the image one must have a test net to deploy the smart contracts as well as metamask extension to interact with Web3.js integrated into the app.
 
 ### :arrow_forward:Steps to Run:running: the project
 <!-- 1. Clone the repository in your machine.
@@ -25,7 +25,18 @@ python3 manage.py migrate
 ```
 6. You can return to step 4 i.e. running the server, after doing migrations.
 7. After running the server, go to the URL **"127.0.0.1:8000"** to see the app running. -->
-8. You can test the app now.:confetti_ball::tada:
+1. Deploy the contracts to your test blockchain.
+2. Connect metamask to your test server.
+3. Now we will run the frontend application.
+4. Use the command to install all node dependencies to compile the application:
+```bash
+npm install
+```
+5. After completion, use the command to run the application on your localhost:
+```bash
+npm start
+```
+6. You can test the app now.:confetti_ball::tada:
 <!-- - 📖 [Submission Document](https://docs.google.com/document/d/1CLNgayvGSYxIBk-vm8iN8L4YLoof6af-X0KcryZuZ5k/edit?usp=sharing) -->
 
 ## :construction:Working Demo Of The Project:construction:
