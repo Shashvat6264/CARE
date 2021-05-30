@@ -6,7 +6,7 @@
 <p align="center"><b>CARE</b> is a decentralized app built on <b>Ethereum</b>, <br> Aims at creating an interface for people to report and track children who have been abandoned/orphaned. <br> This is to ensure that these children do not get exploited for cheap labour or fall into the trap of trafficking.<br/><br/></p>
 
 ## ⚡️ Quick start
-To use the image one must have a test net to deploy the blockchain as well as metamask extension to interact with Web3.js integrated into the app.
+To use the image one must have a test net to deploy the smart contracts as well as metamask extension to interact with Web3.js integrated into the app.
 
 ### :arrow_forward:Steps to Run:running: the project
 <!-- 1. Clone the repository in your machine.
