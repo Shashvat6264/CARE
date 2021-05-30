@@ -1,6 +1,6 @@
 <h1 align="center">
   <img src="https://images.pexels.com/photos/1148998/pexels-photo-1148998.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="350px"/><br/>
-   CARE- CHILD ADOPTION AND REGITRATION ON ETHEREUM
+   CARE- CHILD ADOPTION AND REGISTRATION ON ETHEREUM
 </h1>
 
 <p align="center"><b>CARE</b> is a decentralized app built on <b>Ethereum</b>, <br> Aims at creating an interface for people to report and track children who have been abandoned/orphaned. <br> This is to ensure that these children do not get exploited for cheap labour or fall into the trap of trafficking.<br/><br/></p>
