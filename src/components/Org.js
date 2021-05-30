@@ -61,8 +61,8 @@ function Org() {
           bg="dark"
           key={idx}
           text="white"
-          style={{ width: "18rem", display: "inline-block", margin: "20px" }}
-          className="mb-2"
+          style={{ width: "18rem", display: "inline-block", margin: "20px" ,padding:"20px" ,borderRadius:"10px"}}
+          className="mb-5 ml-5 mr-5"
         >
           <Card.Header bg="warning">{org.name}</Card.Header>
           <Card.Body>
@@ -70,7 +70,8 @@ function Org() {
             <Card.Text>{org.description}</Card.Text>
           </Card.Body>
           <Card.Footer>
-            <Button variant="secondary">Visit Website</Button>
+            <Button variant="success" href="https://www.adoptuskids.org/">Visit Website</Button>
+            <br></br>
             <Button
               variant="secondary"
               onClick={() => setModalShow(idx)}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import getWeb3 from '../../utils/getWeb3.js';
 import ChildOwnership from '../../contracts/ChildOwnership.json';
+import Swal from 'sweetalert2'
 
 class OrgForm extends Component {
     constructor(){
@@ -12,34 +13,42 @@ class OrgForm extends Component {
         this.registerOrganisation = this.registerOrganisation.bind(this);
     }
     
-    componentDidMount(){
-        getWeb3.then(results => {
-          results.web3.eth.getAccounts((error, acc) => {
-            this.setState({
-              address: acc[0],
-              web3: results.web3
-            })
-          });
-        }).catch((error) => {
-          console.log('Error finding web3: ' + error);
-        })
-    }
+    // componentDidMount(){
+    //     getWeb3.then(results => {
+    //       results.web3.eth.getAccounts((error, acc) => {
+    //         this.setState({
+    //           address: acc[0],
+    //           web3: results.web3
+    //         })
+    //       });
+    //     }).catch((error) => {
+    //       console.log('Error finding web3: ' + error);
+    //     })
+    // }
 
     registerOrganisation(){
-        const contract = require('truffle-contract');
-        const Ownership = contract(ChildOwnership);
-        Ownership.setProvider(this.state.web3.currentProvider);
-        var OwnershipInstance;
-        this.state.web3.eth.getAccounts((error, accounts) => {
-            Ownership.deployed().then((instance) => {
-                OwnershipInstance = instance
-            }).then((result) => {
-                var name = document.getElementById("name").value;
-                OwnershipInstance.registerOrganisation.call(name, {from: accounts[0]});
-            }).catch((error) => {
-                console.log("Error: " + error);
-            })
-        })
+        // const contract = require('truffle-contract');
+        // const Ownership = contract(ChildOwnership);
+        // Ownership.setProvider(this.state.web3.currentProvider);
+        // var OwnershipInstance;
+        // this.state.web3.eth.getAccounts((error, accounts) => {
+        //     Ownership.deployed().then((instance) => {
+        //         OwnershipInstance = instance
+        //     }).then((result) => {
+        //         var name = document.getElementById("name").value;
+        //         OwnershipInstance.registerOrganisation.call(name, {from: accounts[0]});
+        //     }).catch((error) => {
+        //         console.log("Error: " + error);
+        //     })
+        // })
+         
+Swal.fire({
+
+    icon: 'success',
+    title: 'Sign In Successful',
+    showConfirmButton: false,
+    timer: 1500
+  })
     }
 
 

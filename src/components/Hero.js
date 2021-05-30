@@ -6,6 +6,7 @@ import "./styles.css";
 function Hero() {
   return (
     <div>
+      <h1 style={{textAlign:"center" ,marginTop:"5%" ,fontFamily:"Karla",fontSize:"40px",fontWeight:"500"}}>CARE:Child Adoption and Registration on Etherium</h1>
       <div className="content">
         <Land />
         <div className="desc">
@@ -19,8 +20,8 @@ function Hero() {
         </div>
         <br></br>
       </div>
-      <div className="content">
-        <div className="desc-bottom">
+      <div className="content bottom">
+        <div className="desc-bottom ">
           Are you an Organisation?
           <br></br>
           If yes then then enter here.
