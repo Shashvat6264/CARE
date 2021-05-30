@@ -40,7 +40,7 @@ npm start
 <!-- - 📖 [Submission Document](https://docs.google.com/document/d/1CLNgayvGSYxIBk-vm8iN8L4YLoof6af-X0KcryZuZ5k/edit?usp=sharing) -->
 
 ## :construction:Working Demo Of The Project:construction:
-[![VIDEO OF PROJECT](https://www.youtube.com/watch?v=9oldN2zUoi4/0.jpg)](https://www.youtube.com/watch?v=9oldN2zUoi4 "CICADA 3301 Team 'BugSlayers'")  
+[![VIDEO OF PROJECT](http://img.youtube.com/vi/9oldN2zUoi4/0.jpg)](https://www.youtube.com/watch?v=9oldN2zUoi4 "CICADA 3301 Team 'BugSlayers'")  
 The video explains the working of the project as well as all its technicalities.
 
 ## :bookmark_tabs:Why CARE?
