@@ -6,10 +6,12 @@ import "./styles.css";
 function Hero() {
   return (
     <div>
-      <h1 style={{textAlign:"center" ,marginTop:"5%" ,fontFamily:"Karla",fontSize:"40px",fontWeight:"500"}}>CARE:Child Adoption and Registration on Etherium</h1>
+     
       <div className="content">
         <Land />
+
         <div className="desc">
+        <h1 style={{textAlign:"center" ,marginTop:"5%" ,fontFamily:"Karla",fontSize:"40px",fontWeight:"500",marginBottom:"5%"}}>CARE:Child Adoption and Registration on Etherium</h1>
           Do you want to help a child get adopted and not fall trap to trafficking?
           <br></br>
           Get a child registered.
